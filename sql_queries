@@ -1,0 +1,8 @@
+/**
+    Create database 'demo'
+    username: root, password = root1234 (Change in main/resources/application.properties)
+    execute below sql queries in 'demo' database
+**/
+
+create table student(student_id int primary key auto_increment not null, name varchar(20), age int);
+create table marks(student_id int primary key, maths varchar(5), science varchar(5), english varchar(5));
